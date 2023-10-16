@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perros calientes"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivHotdogSmall"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/hotdog_classic"
+                app:srcCompat="@drawable/hotdog_classic" />
+
+            <TextView
+                android:id="@+id/tvHotdogSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hotdog pequeño\n$5"/>
+
+            <Button
+                android:id="@+id/hotbtnSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comprar"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivHotdogMedium"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/perro_mediano"
+                app:srcCompat="@drawable/perro_mediano" />
+
+            <TextView
+                android:id="@+id/tvHotdogMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hotdog mediano\n$7"/>
+
+            <Button
+                android:id="@+id/hotbtnMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comprar"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivHotdogLarge"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/perro_grande"
+                app:srcCompat="@drawable/perro_grande" />
+
+            <TextView
+                android:id="@+id/tvHotdogLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hotdog grande\n$9"/>
+
+            <Button
+                android:id="@+id/hotbtnLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comprar"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

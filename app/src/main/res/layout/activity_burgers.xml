@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hamburguesas"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivBurgerSmall"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/peque"
+                app:srcCompat="@drawable/peque" />
+
+            <TextView
+                android:id="@+id/tvBurgerSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Burger pequeña\n$5"/>
+
+            <Button
+                android:id="@+id/burbtnSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comprar"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivBurgerMedium"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/burger_grande"
+                app:srcCompat="@drawable/burger_grande" />
+
+            <TextView
+                android:id="@+id/tvBurgerMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Burger mediana\n$7"/>
+
+            <Button
+                android:id="@+id/burbtnMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comprar"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivBurgerLarge"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/burger_mediana"
+                app:srcCompat="@drawable/burger_mediana" />
+
+            <TextView
+                android:id="@+id/tvBurgerLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Burger grande\n$9"/>
+
+            <Button
+                android:id="@+id/burbtnLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comprar"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
